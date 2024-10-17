@@ -82,7 +82,7 @@ resource "google_compute_ssl_policy" "tls_policy" {
 
 module "gclb" {
   source  = "GoogleCloudPlatform/lb-http/google//modules/serverless_negs"
-  version = "~> 9.0"
+  version = "~> 12.0"
 
   project = var.project_id
   name    = var.app_name
